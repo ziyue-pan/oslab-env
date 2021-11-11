@@ -11,7 +11,7 @@ ARG QEMU_VERSION=6.1.0
 ARG RV64_REPO_URL=https://github.com/riscv-collab/riscv-gnu-toolchain/releases/download
 
 # apt's mirror domain
-ARG APT_MIRROR_DOMAIN=mirrors.zju.edu.cn
+ARG APT_MIRROR_DOMAIN=mirrors.tuna.tsinghua.edu.cn
 
 
 RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak && \
