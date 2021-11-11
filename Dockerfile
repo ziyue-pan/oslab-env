@@ -31,7 +31,7 @@ RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak && \
     tar xvJf qemu-$QEMU_VERSION.tar.xz && \
     cd qemu-$QEMU_VERSION && \
     ./configure --target-list=riscv64-softmmu && \
-    make -j && \
+    make -j$(nproc) && \
     make install && \
     cd .. && rm -rf qemu-$QEMU_VERSION qemu-$QEMU_VERSION.tar.xz && \
     rm -rf riscv64-glibc-ubuntu-20.04-nightly-$RV64_VERSION-nightly.tar.gz
