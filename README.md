@@ -10,6 +10,12 @@
 $ docker pull alphavake/oslab
 ```
 
+The default width is set to 64-bit. If you need a 32-bit toolchain:
+
+```bash
+$ docker pull alphavake/oslab:rv32
+```
+
 ## Toolchain List
 
 - **qemu-system-riscv64**: v6.1.0
