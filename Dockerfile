@@ -8,7 +8,7 @@ ARG BITS=64
 
 # version
 ARG RV64_VERSION=2021.09.21
-ARG QEMU_VERSION=6.1.0
+ARG QEMU_VERSION=6.2.0
 
 # static link
 ARG RV64_REPO_URL=https://github.com/riscv-collab/riscv-gnu-toolchain/releases/download
