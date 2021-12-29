@@ -18,8 +18,8 @@ $ docker pull alphavake/oslab:rv32
 
 ## Toolchain List
 
-- **qemu-system-riscv64**: v6.1.0
-- **riscv-gnu-toolchain**: nightly 2021.09.21
+- **qemu-system-riscv64**: v6.2.0
+- **riscv-gnu-toolchain**: nightly 2021.12.22
 
 ## LICENSE
 
