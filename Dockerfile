@@ -9,14 +9,7 @@ ARG BITS=64
 # version
 ARG QEMU_VERSION=7.1.0
 
-# apt's mirror domain
-ARG APT_MIRROR_DOMAIN=mirrors.tuna.tsinghua.edu.cn
-
-
-RUN cp /etc/apt/sources.list /etc/apt/sources.list.bak && \
-    sed -i s@/archive.ubuntu.com/@/$APT_MIRROR_DOMAIN/@g /etc/apt/sources.list && \
-    apt -y update && \
-    apt -y upgrade && \
+RUN apt -y update && \
     apt install -y autoconf automake autotools-dev libmpc-dev libmpfr-dev libgmp-dev gawk build-essential texinfo patchutils zlib1g-dev libexpat-dev && \
     apt install -y flex bison bc python3 curl wget make gcc vim git ninja-build libglib2.0-dev libpixman-1-dev pkg-config gperf libtool && \
     git clone https://github.com/riscv/riscv-gnu-toolchain && \
